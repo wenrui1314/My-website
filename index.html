@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>温瑞个人网站</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Atom Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<script src="js/jquery-1.11.0.min.js"></script>
+
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+
+<!--start-smoth-scrolling-->
+</head>
+<body>
+<!--start-banner-->
+	<div class="banner" id="home">
+		<div class="container">
+			<div class="header">
+				<div class="navigation">
+					 <span class="menu"></span>
+					<ul class="navig">
+						<li><a href="index.html" class="scroll active">Home</a></li>
+						<li><a href="#about" class="scroll">About Me</a></li>
+						<li><a href="#products" class="scroll">My Portfolio</a></li>
+						<li><a href="#testimonials" class="scroll">Work Experience</a></li>
+						<li><a href="#contact" class="scroll">contact</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="banner-btm">
+				<div  id="top" class="callbacks_container">
+			      	<ul class="rslides" id="slider4">
+			        	<li>
+							<div class="banner-bottom">
+								<h1 class="welcome">Welcome To My Website!</h1>
+								<p>Love life, love code</p>
+								<h1>温瑞-前端工程师</h1>
+							</div>
+						</li>
+			      	</ul>
+			    </div>
+			</div>
+		</div>
+	</div>
+
+	     <!-- script-for-menu -->
+		 <script>
+				$("span.menu").click(function(){
+					$(" ul.navig").slideToggle("slow" , function(){
+					});
+				});
+		 </script>
+		 <!-- script-for-menu -->
+		 <!--Slider-Starts-Here-->
+				<script src="js/responsiveslides.min.js"></script>
+			 <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 4
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager: true,
+			        nav: true,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+			
+			    });
+			  </script>
+			<!--End-slider-script-->	
+<!--end-banner-->
+
+<!--start-about-->
+	<div class="about" id="about">
+		<div class="container">
+			<div class="about-main">
+				<h2>About Me</h2>
+				<label class="line"></label>
+				<img src="images/wr.jpg" alt=""  style="width:150px;margin:10px"/>
+				<p>(1)喜欢互联网行业，善于思考和专研，对代码有浓厚的兴趣；<br>
+					(2)自信心强，对工作认真负责，做事有始有终，具有良好的沟通能力与团队合作能力;<br>
+					(3)从未试图抱怨，一直努力改变
+				</p>
+			</div>
+		</div>
+	</div>
+<!--end-about-->
+
+<!--start-Portfolio-->
+	<div class="container">
+		<div class="special-bottom" id="products">
+			<h2>My Portfolio</h2>
+			<label class="line"></label>
+		</div>
+		<div class="special-btm">
+				<div class="portfolios entertain_box  wow fadeInUp" data-wow-delay="0.4s" id="portfolio">
+					 <div class="portfolio-top">
+							<ul id="filters" class="clearfix">
+							<!--<li><span class="filter active" data-filter="app card icon logo web">ALL</span></li>-->
+							<li><span class="filter" data-filter="photo">PC</span></li>
+							<li><span class="filter" data-filter="card">App</span></li>
+						</ul>
+						<div id="portfoliolist">
+							<div class="portfolio photo mix_all" data-cat="photo" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">
+									<a href="https://wenrui1314.github.io/poker/" class="b-link-stripe b-animate-go   swipebox"  title="Image Title">
+									   <img src="images/wr_1.png" />
+									   <div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">Poker Game</h2></div>
+									</a>
+								</div>
+							</div>
+							<div class="portfolio photo mix_all" data-cat="photo" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">
+									<a href="https://wenrui1314.github.io/type-game/" class="b-link-stripe b-animate-go   swipebox"  title="Image Title">
+									 <img src="images/wr_2.png" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">Typing Game</h2></div>
+									</a>
+							   </div>
+							</div>
+							<div class="portfolio photo mix_all" data-cat="photo" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">
+									<a href="https://wenrui1314.github.io/canvas/" class="b-link-stripe b-animate-go   swipebox"  title="Image Title">
+										<img src="images/wr_3.png" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">MY Canvas</h2></div>
+									</a>
+								</div>
+							</div>
+							<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">
+									<a href="http://newsifeng.duapp.com" class="b-link-stripe b-animate-go   swipebox"  title="Image Title">
+									 <img src="images/wr_4.png" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">Hot News</h2></div>
+									</a>
+								</div>
+							</div>
+							<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">
+									<a href="http://moviestar.duapp.com" class="b-link-stripe b-animate-go   swipebox"  title="Image Title">
+										<img src="images/wr_5.png" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">Love Movie</h2></div>
+									</a>
+								</div>
+							</div>
+							<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">
+									<a href="" class="b-link-stripe b-animate-go   swipebox"  title="Image Title">
+										<img src="images/wr_6.png" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">Hai Ka</h2></div>
+									</a>
+								</div>
+							</div>
+							<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">
+									<a href="http://ktvappwr.duapp.com/index.php/home" class="b-link-stripe b-animate-go   swipebox"  title="Image Title">
+										<img src="images/wr_8.png" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">Sing KTV</h2></div>
+									</a>
+								</div>
+							</div>
+					    </div>
+	                 </div>
+				 </div>
+			</div>
+	</div>
+
+	<!--<link rel="stylesheet" href="css/swipebox.css">-->
+	<!--<script src="js/jquery.swipebox.min.js"></script> -->
+	    <!--<script type="text/javascript">-->
+			<!--jQuery(function($) {-->
+				<!--$(".swipebox").swipebox();-->
+			<!--});-->
+		<!--</script>-->
+<!--end-Portfolio-->
+
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+    <script type="text/javascript">
+$(function () {
+	
+	var filterList = {
+		init: function () {
+		$('#portfoliolist').mixitup({
+			targetSelector: '.portfolio',
+			filterSelector: '.filter',
+			effects: ['fade'],
+			easing: 'snap',
+			// call the hover effect
+			onMixEnd: filterList.hoverEffect()
+		});				
+	
+	},
+	
+	hoverEffect: function () {
+		// Simple parallax effect
+		$('#portfoliolist .portfolio').hover(
+			function () {
+				$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+				$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+			},
+			function () {
+				$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+				$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+			}		
+		);				
+	
+	}
+
+};
+
+// Run the show!
+	filterList.init();
+	
+});	
+</script>
+
+
+<!--start-experience-->
+	<div class="test" id="testimonials">
+		<div class="container">
+			<div class="test-top">
+				<h2>Work Experience</h2>
+				<label class="line"></label>
+				<p style="color: #999999">Work experience is my precious wealth！</p>
+			</div>
+			<div class="test-bottom">
+				<div class="col-md-12 test-bottom-left">
+					<div class="test-left">
+						<div class="test-btm">
+							<div class="test-1" style="width:100px;height:100px;margin-left:8%;border-radius: 50%;background: url(images/test-3.png) 50%/cover no-repeat" >
+							</div>
+							<div class="test-2">
+								<h4>山西东远科技有限公司</h4>
+								<label>前端工程师</label>
+								<p style="height:auto;padding: 0 8%">
+									(1)参与web项目的页面布局，使用JS实现页面动态效果；使用jQuery和bootstrap框架12栅格系统编写响应式网页;<br>
+									(2)参与pc端网站项目的开发；<br>
+									(3)使用node.js和react实现前后台组件化项目的开发；工作内容：
+								</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--end-experience-->
+
+<!--start-contact-->
+	<div class="contact" id="contact">
+		<div class="container">
+			<div class="contact-top">
+				<h2>Contact</h2>
+				<label class="line"></label>
+			</div>
+			<div class="contact-bottom">
+				<div class="col-lg-4 wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
+					<div class="contact_info">
+						<div class="detail">
+							<h4>Address</h4>
+							<i class="fa fa-map-marker" aria-hidden="true"></i>
+							<p>杭州市余杭区</p>
+						</div>
+						<div class="detail">
+							<h4>Call</h4>
+							<p>15513856327</p>
+						</div>
+						<div class="detail">
+							<h4>Email</h4>
+							<p>15513856327@163.com</p>
+						</div>
+					</div>
+					<ul class="social_links">
+						<li><a href="#"><span class="fb"> </span></a></li>
+						<li><a href="#"><span class="twt"> </span></a></li>
+						<li><a href="#"><span class="p"> </span></a></li>
+						<li><a href="#"><span class="d"> </span></a></li>
+					</ul>
+				</div>
+				<div class="col-lg-8">
+					<input type="text" value="Your Name" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Your Name';}"/>
+					<input type="text" value="Your Email" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Your Email';}"/>
+					<textarea value="Your Message" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Your Message';}">Your Message</textarea>
+					<div class="contact-but">
+						<input type="submit" value="SEND MESSAGE" />
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+<!--end-contact-->
+
+<!--start-footer-->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-main">
+				<p>Copyright &copy; 2017.Company name All rights reserved.</p>
+			</div>
+		</div>
+		 <script type="text/javascript">
+				$(document).ready(function() {
+					$().UItoTop({ easingType: 'easeOutQuart' });
+
+				});
+			</script>
+		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	</div>
+<!--end-footer-->
+</body>
+</html>
